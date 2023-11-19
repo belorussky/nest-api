@@ -12,8 +12,8 @@ jobs:
       - name: Publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@v5
         with:
-          registry: docker.pkg.github.com
-          name: docker.pkg.github.com/belorussky/nest-api/api-demo
+          registry: https://ghcr.io
+          name: https://ghcr.io/belorussky/nest-api/api-demo
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: "develop"
